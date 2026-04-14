@@ -1,0 +1,42 @@
+# NautilusTrader DeepSeek AI Strategy Dependencies
+# Python >= 3.12 required
+
+# Core framework - 1.224.0 includes reconciliation loop fix, trailing stop LAST_PRICE fix, algo order fixes
+nautilus_trader==1.224.0
+
+# AI and API clients
+openai>=1.0.0
+requests>=2.31.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Performance Metrics (v3.0.1 - use official libraries)
+# See: docs/research/EVALUATION_FRAMEWORK.md
+empyrical-reloaded>=0.5.12  # Sharpe/Sortino/Calmar/MDD/VaR (Python 3.12 compatible fork)
+scipy>=1.9.0                # Bootstrap, statistical tests
+statsmodels>=0.14.0         # Multiple hypothesis testing correction
+
+# Configuration
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# Cache and persistence
+redis>=5.0.0
+
+# Optional: For enhanced logging
+rich>=13.0.0
+
+# Notifications and monitoring
+python-telegram-bot>=21.0
+
+# HTTP client
+httpx>=0.27.0
+aiohttp>=3.9.0
+
+# Binance REST API (for E2E tests and direct API access)
+binance-futures-connector>=4.0.0
+
+# Testing
+pytest>=7.0.0

@@ -20,7 +20,7 @@ statsmodels>=0.14.0         # Multiple hypothesis testing correction
 
 # Configuration
 python-dotenv>=1.0.0
-pyyaml>=6.0
+pyyaml>=6.0.3
 
 # Cache and persistence
 redis>=5.0.0
